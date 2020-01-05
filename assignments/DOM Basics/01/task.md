@@ -6,9 +6,9 @@ Use the below instruction and solve it using `index.html` file. Write JavaScript
 4. Create a structure like this using js and push it to the document.
   ```html
     <ul>
-      <li>Buy groceries</li>
-      <li>Feed the cat</li>
-      <li>Do laundry</li>
+      <li>Buy groceries </li>
+      <li>Feed the cat </li>
+      <li>Do laundry </li>
     </ul>
   ```
 5. Create a new `li` element and push it in the `ul` using `appendChild`.
