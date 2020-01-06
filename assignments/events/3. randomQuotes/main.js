@@ -4,16 +4,19 @@ var quotes;
 var randomQuotes = document.querySelector('.quote');
 var randomAuthor = document.querySelector('.author');
 
-document.addEventListener('click',randomnumber);
+document.addEventListener('keydown',randomnumber);
 
 
 function randomnumber (){
-    var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-    document.body.style.backgroundColor = color;
-    var randomchoose = Math.floor(Math.random()*77);
-    console.log(randomchoose);
-    randomAuthor.innerHTML = (quotes[randomchoose].quoteAuthor);
-    randomQuotes.innerText = (quotes[randomchoose].quoteText);
+    if(event.keyCode == 32){
+        var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        document.body.style.backgroundColor = color;
+        var randomchoose = Math.floor(Math.random()*77);
+        console.log(randomchoose);
+        randomAuthor.innerHTML = (quotes[randomchoose].quoteAuthor);
+        randomQuotes.innerText = (quotes[randomchoose].quoteText);
+    }
+   
 }
 
 
