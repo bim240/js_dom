@@ -1,0 +1,16 @@
+.btn {
+    background-color: #8F7DF9;
+    border : none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    /* word-spacing:30px; */
+    color:white;
+    font-size: 20px;
+    font-weight: 900;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50vh;
+    margin-left: 85vh;
+    outline: none;
+
+  
+}
