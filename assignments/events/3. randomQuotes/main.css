@@ -1,0 +1,23 @@
+.quote {
+    color : black;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    padding: 20px;
+    line-height: 1.3;
+    text-align: center;
+    margin-top: 25vh;
+
+}
+.author {
+    color : black;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    padding: 20px;
+    line-height: 1.3;
+    text-align: center;
+    font-weight: 400;
+    /* margin-top: 50vh; */
+
+}
