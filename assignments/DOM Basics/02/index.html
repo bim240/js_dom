@@ -47,6 +47,29 @@
     <div class="demo-query-all">Access me by query all (2)</div>
     <script>
       // your code goes here
+      var demoid = document.querySelector('#demo');
+      demoid.style.border ='1px solid purple';
+
+      var allDemoClass = document.querySelectorAll('.demo');
+      console.log(allDemoClass);
+      for(let DemoClass of allDemoClass){
+      DemoClass.style.border = `1px solid orange`;
+      }
+
+      var allArticle = document.querySelectorAll('article');
+      for(let article of allArticle){
+        article.style.border = `1px solid blue`;
+      }
+
+      var demoQuery = document.querySelector('#demo-query')
+      demoQuery.style.border = `1px solid grey`;
+
+      var demoQueryAll = document.querySelectorAll('.demo-query-all');
+      for (let queryall of demoQueryAll) {
+        queryall.style.border = `1px solid green`;
+      }
+
+
     </script>
   </body>
 </html>
