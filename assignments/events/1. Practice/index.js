@@ -46,9 +46,9 @@ newUl.append(newLi);
 
 
 //Loop over all of the list inside the ol tag and give them a background color of "green".
-var allol = document.querySelectorAll('ol li');
-console.dir(allol);
-for(let i of allol) {
+var allOl = document.querySelectorAll('ol li');
+console.dir(allOl);
+for(let i of allOl) {
     i.style.background = "green";
 }
 
