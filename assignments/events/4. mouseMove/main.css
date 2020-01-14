@@ -1,0 +1,32 @@
+.body {
+    margin: 5px;
+    border: 5px solid yellow;
+    width:98.5%;
+    height: 96.5vh;
+}
+.section {
+    margin-left : 40px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.screenX{
+    line-height: 30px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.screeny{
+    line-height: 30px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.clientX{
+    line-height: 30px;
+    font-size: 25px;
+    margin-top: 15px;
+}
+.clientY{
+    line-height: 30px;
+    font-size: 25px;
+    margin-top: 15px;
+}

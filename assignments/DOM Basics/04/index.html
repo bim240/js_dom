@@ -12,5 +12,31 @@
       <li>Favorites: <span id="favorites"></span></li>
       <li>Hometown: <span id="hometown"></span></li>
     </ul>
+
+    <script>
+      document.body.style.fontFamily = 'Arial, sans-serif';
+      var info = ['Bimlendu kumar', 'Manga', 'Darbhanga'];
+      var allli = document.querySelectorAll('li');
+
+      for (let i = 0; i < allli.length; i++){
+        allli[i].innerHTML = info[i];
+      }
+
+      for( let classli of allli) {
+        classli.className = 'listitem';
+      }
+      var listitem = document.querySelectorAll('.listitem');
+      for (let i of listitem) {
+        i.style.color = 'red';
+      }
+
+      var img = document.createElement('img');
+      // console.dir(img);
+      img.src ="i.jpg";
+      document.body.append(img); 
+
+
+      
+    </script>
   </body>
 </html>

@@ -39,5 +39,30 @@
     const p = document.getElementsByTagName("p")[0];
     const ul = document.getElementsByTagName("ul")[0];
     // Your code goes here
+
+    console.dir(document);
+    console.dir(document.documentElement);
+    console.dir(document.head);
+    console.dir(document.title);
+    console.dir(document.body);
+
+    //working on ul
+    ul.firstElementChild.style.background = 'green';
+
+    // console.dir();
+    var allli = document.querySelectorAll('li');
+    console.dir(allli);
+
+    for(let li of allli) {
+      li.style.background='green';
+    }
+      // console.log(allli.length);
+      
+    allli[(allli.length-1)].style.background = "pink";
+    var midli = allli[Math.floor((allli.length)/2)];
+    // midli.style.background = 'coral';
+    midli.nextElementSibling.style.background = 'aquamarine';
+    midli.previousElementSibling.style.background = 'coral';
+
   </script>
 </html>

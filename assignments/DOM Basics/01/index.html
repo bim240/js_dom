@@ -8,9 +8,36 @@
   </head>
   <body>
     <body>
+       
       <h1>Document Object Model</h1>
     <script>
-      // your code goes here
+      // Creating paragraph
+     var newp = document.createElement('p');
+     newp.textContent= "Hello Javascript";
+     newp.innerHTML = `<p>${'I love ' }<strong>${'Javascript'}</strong></p>`;
+     document.body.appendChild(newp);
+
+      // ul section
+     var newul = document.createElement('ul');
+     newul.className = 'class-ul';
+     var lilist = ["Buy groceries" ,"Feed the cat" ,"Do laundry" ];
+
+
+     for (let i =0; i < lilist.length; i++) {
+        var newli = document.createElement('li');
+        newli.innerHTML = lilist[i];
+        newul.append(newli);
+     }
+     document.body.appendChild(newul);
+
+    //  adding newchild
+     var newli = document.createElement('li');
+     newli.innerHTML = "Buy Milk";
+     newul.appendChild(newli);
+
+    //  removing child
+      newul.childNodes[1].remove();      
+
     </script>
   </body>
 </html>

@@ -1,10 +1,29 @@
 var quotes;
 
 // Write your code here
+var randomQuotes = document.querySelector('.quote');
+var randomAuthor = document.querySelector('.author');
+
+document.addEventListener('keydown',randomnumber);
+
+
+function randomnumber (){
+    if(event.keyCode == 32){
+        var color = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
+        document.body.style.backgroundColor = color;
+        var randomchoose = Math.floor(Math.random()*77);
+        console.log(randomchoose);
+        randomAuthor.innerHTML = (quotes[randomchoose].quoteAuthor);
+        randomQuotes.innerText = (quotes[randomchoose].quoteText);
+    }
+   
+}
 
 
 
-quotes = [
+
+
+ quotes = [
     {
         "quoteAuthor": "Thomas Edison",
         "quoteText": "Genius is one percent inspiration and ninety-nine percent perspiration."
@@ -314,3 +333,5 @@ quotes = [
         "quoteText": "Great talent finds happiness in execution."
     }
 ];
+
+// console.log(quotes.length);
